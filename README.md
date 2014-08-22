@@ -12,7 +12,7 @@ rmarkdown
 # Install with install.packages('package_name')
 ```
 
-Pandoc is also required as a dependency unless working from the latest version of RStudio.
+Pandoc (`1.12.3` or higher) is also required as a dependency unless working from the latest version of RStudio (`0.98.953` or higher).
 
 __Building the manuscript:__
 
