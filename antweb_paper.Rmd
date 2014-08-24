@@ -1,6 +1,6 @@
 ---
 layout: 12pt,preprint
-title: "AntWeb Biodiversity paper"
+title: "Patterns of ant diversity and endemism in Madagascar"
 author:
   - name: Karthik Ram
     affiliation: ropensci
