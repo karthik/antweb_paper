@@ -11,4 +11,4 @@ md:
 	Rscript -e "library(rmarkdown); render('antweb_paper.Rmd', output_format = 'md_document', quiet = TRUE)"
 
 clean:
-	rm -rf antweb_paper_cache
+	rm -rf antweb_paper_cache .Rhistory
