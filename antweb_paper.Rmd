@@ -3,7 +3,7 @@ layout: 12pt,preprint
 title: "Patterns of ant diversity and endemism in Madagascar"
 author:
   - name: Karthik Ram
-    affiliation: ropensci
+    affiliation: ropensci,bids
     email: karthik.ram(at)gmail.com
     footnote: Corresponding author
   - name: Jay Mollica
@@ -14,13 +14,19 @@ address:
   - code: ropensci
     address: | 
       The rOpenSci project
-      3101 Valley Life Sciences Building
-      University of California
+      3101 Valley Life Sciences Building,
+      University of California,
       Berkeley, California 94720-3160 USA
+  - code: bids
+    address: | 
+      Berkeley Institute for Data Science,
+      Doe 355,
+      University of California, Berkeley,
+      Berkeley, CA 94720
   - code: cas
     address: | 
-      California Academy of Sciences
-      55 Music Concourse Dr
+      California Academy of Sciences,
+      55 Music Concourse Drive,
       San Francisco, CA 94118
 
 abstract: |
@@ -58,7 +64,7 @@ output:
 knitr::opts_chunk$set(
   comment = "#>",
   error = FALSE,
-  cache = TRUE,
+  echo = FALSE,
   tidy = FALSE
 )
 ```
@@ -68,14 +74,42 @@ knitr::opts_chunk$set(
 Introduction
 ----------------
 
-```{r count, echo = FALSE}
-library(AntWeb)
-genera <- aw_distinct("genus")$count
-species <- aw_distinct("species")
-species <- species$count
+```{r read_code}
+read_chunk('antweb.R')
+```
+
+```{r counts}
 ```
 
 AntWeb is a taxonomic database maintained by the California Academy of Sciences (CAS) and houses the largest collection of ant specimens in the world [@wardp.s.editor2013]. The database contains `r genera` unique genera and `r format(species, digits = 5)` unique species at the time of this writing. 
+
+__How many species are there in Madagascar?__
+
+```{r how_many_species}
+```
+
+```{r elevation_gradient}
+```
+
+```{r latitude_gradient}
+```
+
+```{r across_habitats}
+```
+
+```{r two_localities}
+```
+
+```{r endemism}
+```
+
+```{r accumulation}
+```
+
+
+Reproducibility statement
+--------------------------
+This research project was run on 
 
 
 
