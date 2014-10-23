@@ -85,7 +85,7 @@ AntWeb is a taxonomic database maintained by the California Academy of Sciences 
 
 __How many species are there in Madagascar?__
 
-```{r how_many_species}
+```{r how_many_species, cache = TRUE}
 ```
 
 ```{r elevation_gradient}
@@ -109,7 +109,14 @@ __How many species are there in Madagascar?__
 
 Reproducibility statement
 --------------------------
-This research project was run on 
+This research project was run on ...
+All the data are archived at this DOI on figshare.
+All the dependencies are avilable here.
+And here is the docker file to get the exact same environment.
+
+
+Acknowldgements
+--------------------------
 
 
 
